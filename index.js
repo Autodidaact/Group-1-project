@@ -1,61 +1,57 @@
-const input = document.querySelector("input");
-input.addEventListener("submit", (e) => {
-    e.preventDefault();
-    console.log(e);
-    /* handlingServeGet(e.target.input.value);
-    form.reset(); */
-    
-    
-})
-/* function handlingServeGet(e){
+document.addEventListener("DOMContentLoaded", () => {
+    const input = document.getElementById("search_input");
+    const btn = document.getElementById("search_btn")
+    btn.addEventListener("click", (e) => {
+        e.preventDefault();
+        handlingServeGet(input.value);
+        
+        
+    })
+})    
+function handlingServeGet(e){
     fetch(" http://localhost:3000/restaurants")
     .then((resp) => resp.json())
     .then((json) => renderResult(json));
 
     function renderResult(data) {
 
-        const info = document.querySelector('.meal-item');
-        players.forEach(player => {
-            const h2 = document.createElement('h2');
-            h2.innerHTML = player.name;
-            info.appendChild(h2);
-        }); 
+        const info = document.querySelector('.location_item');
         data.filter(item => {
             if (item["neighborhood"] ===  e){
                 const card = document.createElement('li');
                 card.className ="card"
-                h2.innerHTML = `
+                card.innerHTML = `
                 <img src="${item.photograph}">
                 <div class="content">
-                    <h4>${item.name}</h4>
+                    <h4><b>Name:</b> ${item.name}</h4>
                     <p>
-                      At <span>${item.address}</span>
+                    <b>Address:</b> ${item.address}
                     </p>
                     <p>
-                    Type of Cuisine: <span>${item.cuisine_type}</span>
+                    <b>Type of Cuisine:</b> ${item.cuisine_type}
                     </p>
                     <div class="working_hours">
-                        <h2>Operation hours<?h2>
+                        <h5>Operation hours<?h5>
                         <p>
-                            Mondays: <span>${item.operating_hours.Monday}</span>
+                            <b>Mondays:</b> ${item.operating_hours.Monday}
                         </p>
                         <p>
-                            Tusdays: <span>${item.operating_hours.Tuesday}</span>
+                        <b>Tusdays:</b> ${item.operating_hours.Tuesday}
                         </p>
                         <p>
-                            Wednesdays: <span>${item.operating_hours.Wednesday}</span>
+                        <b>Wednesdays:</b> ${item.operating_hours.Wednesday}
                         </p>
                         <p>
-                            Thursdays: <span>${item.operating_hours.Thursday}</span>
+                        <b>Thursdays:</b> ${item.operating_hours.Thursday}
                         </p>
                         <p>
-                            Fridays: <span>${item.operating_hours.Monday.Friday}</span>
+                        <b>Fridays:</b> ${item.operating_hours.Friday}
                         </p>
                         <p>
-                            Saturdays: <span>${item.operating_hours.Saturday}</span>
+                        <b>Saturdays:</b> ${item.operating_hours.Saturday}
                         </p>
                         <p>
-                            Sundays: <span>${item.operating_hours.Sunday}</span>
+                            <b>Sundays:</b> ${item.operating_hours.Sunday}
                         </p>
                     </div>
                    
@@ -63,25 +59,18 @@ input.addEventListener("submit", (e) => {
                   
                     </p>
                 </div>
-                for (review in item.reviews){
-                    <h2>Reviews</h2>
-                    <p>${review.name}</p>
-                    <p>${review.date}</p>
-                    <p>${review.rating}</p>
-                    <p>${review.comments}</p>
-                }
-                `;
-                info.appendChild(h2);
+                
+                `
+           
+                
+                ;
+
+                info.appendChild(card);
             }
-            else{
-                const h = document.createElement('h2');
-                h.innerHTML = "Sorry! We don/'t currently have data for your location"
-                info.appendChild(h); 
-            }
+            
         })
         
 
     }
 }
 
- */
