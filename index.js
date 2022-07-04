@@ -68,7 +68,13 @@ function handlingServeGet(e){
                 info.appendChild(card);
             }
             
+            
+        
+            
         })
+        const div = document.createElement('div');
+        div.innerHTML = `<p>No retaurant found</p>`
+        info.appendChild(div);
         
 
     }
