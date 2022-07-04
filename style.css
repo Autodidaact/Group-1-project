@@ -40,7 +40,7 @@ body  {
 }
 
 .location_wrapper {
-  max-width: 1280px;
+  max-width: 700px;
   margin: 0 auto;
   padding: 1rem;
   background: #fff;
@@ -48,13 +48,16 @@ body  {
 }
 
 .location_search  {
-  margin: 2rem 0;
+  margin: 4rem 0;
 }
 
 .location_search cite  {
 font-size: 1rem;
 }
 
+.location_result  {
+  text-align: center;
+}
 .location_search_box  {
   margin: 1.2rem 0;
   display: flex;
@@ -95,6 +98,11 @@ font-size: 1rem;
   -moz-transition: all 0.4s linear;
   -ms-transtion: all 0.4s linear;
   -a-transition: all 0.4s linear;
+}
+
+img {
+  width: 25%;
+  height: auto;
 }
 
 .search_btn:hover {

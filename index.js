@@ -23,7 +23,7 @@ function handlingServeGet(e){
                 card.innerHTML = `
                 <img src="${item.photograph}">
                 <div class="content">
-                    <h4><b>Name:</b> ${item.name}</h4>
+                    <h4><b>Restaurant Name:</b> ${item.name}</h4>
                     <p>
                     <b>Address:</b> ${item.address}
                     </p>
@@ -31,7 +31,7 @@ function handlingServeGet(e){
                     <b>Type of Cuisine:</b> ${item.cuisine_type}
                     </p>
                     <div class="working_hours">
-                        <h5>Operation hours<?h5>
+                        <h5>Operating hours<?h5>
                         <p>
                             <b>Mondays:</b> ${item.operating_hours.Monday}
                         </p>
@@ -62,13 +62,14 @@ function handlingServeGet(e){
                 
                 `
            
-                
+
                 ;
 
                 info.appendChild(card);
             }
             
         })
+        
         
 
     }
