@@ -42,8 +42,8 @@
   }, {
     "id": 2,
     "name": "Emily",
-    "neighborhood": "https://media-cdn.tripadvisor.com/media/photo-s/11/3c/24/46/fantastic-burger.jpg",
-    "photograph": "2.jpg",
+    "neighborhood": "Brooklyn",
+    "photograph": "https://media-cdn.tripadvisor.com/media/photo-s/11/3c/24/46/fantastic-burger.jpg",
     "address": "919 Fulton St, Brooklyn, NY 11238",
     "latlng": {
       "lat": 40.683555,
@@ -199,7 +199,7 @@
     "id": 6,
     "name": "Hometown BBQ",
     "neighborhood": "Brooklyn",
-    "photograph": "https://scontent.facc1-1.fna.fbcdn.net/v/t1.18169-9/11698715_464103117108470_1859819641484478400_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=o7mTLUOsXNUAX-tvFbD&_nc_ht=scontent.facc1-1.fna&oh=00_AT-9sTdo0-yNjXmRgKAkpHRKC6IF7kKDoxpqRSqHaWnrWA&oe=62E5E8C9",
+    "photograph": "https://halalrun.com/wp-content/uploads/2021/06/Hometown-BBQ-Brooklyn-NY-11231-Food-1.jpg",
     "address": "454 Van Brunt St, Brooklyn, NY 11231",
     "latlng": {
       "lat": 40.674925,
