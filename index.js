@@ -5,11 +5,14 @@ document.addEventListener("DOMContentLoaded", () => {
     btn.addEventListener("click", (e) => {
         e.preventDefault();
         handlingServeGet(input.value);
-        input.reset()
+        
+        
         
         
     })
-})    
+     
+})
+
 function handlingServeGet(userInput){
     fetch(" http://localhost:3000/restaurants")
     .then((resp) => resp.json())
