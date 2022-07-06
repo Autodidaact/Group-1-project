@@ -13,5 +13,7 @@ location entry has been entered. Additionally, we provide you with the working d
 hours, location and available meals at each location. 
 
 So all you have to do when you searching for your next meal is to type in your current location
-in the location s
+and you will have all restaurants around you to make a choice. 
+
+We used a mock up json data from some neighborhoods in New York. This is contained in db.json file. 
 
